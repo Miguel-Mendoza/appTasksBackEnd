@@ -1,0 +1,27 @@
+###
+POST http://localhost:9000/task/newtask HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "jira",
+    "description": "Cargar tareas a jira",
+    "typeTask": "Desarrollo",
+    "idstatus": "create"
+}
+
+###
+GET http://localhost:9000/task/alltasks  HTTP/1.1
+
+###
+GET http://localhost:9000/task/task/64e022c989d07783822ab8fb  HTTP/1.1
+###
+PUT http://localhost:9000/task/update/64e04acfb4541bc706ba404c HTTP/1.1
+Content-Type: application/json
+
+{
+    "title" : "openshif",
+    "idstatus": "done"
+}
+
+###
+DELETE http://localhost:9000/task/deleteId/64e049342360cb0a24ef1f43 HTTP/1.1
